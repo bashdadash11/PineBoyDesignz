@@ -6,25 +6,35 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background: #0a0a0a;
     color: white;
+}
+
+/* TOP BAR */
+.topbar {
+    background: #111;
     text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaa;
 }
 
 /* HERO */
 .hero {
-    padding: 120px 20px;
+    text-align: center;
+    padding: 140px 20px;
     background: radial-gradient(circle, #1a1a1a, #000);
 }
 
-h1 {
-    font-size: 70px;
+.hero h1 {
+    font-size: 90px;
     margin: 0;
-    letter-spacing: 8px;
+    letter-spacing: 10px;
 }
 
-p {
+.hero p {
     color: #aaa;
     letter-spacing: 3px;
 }
@@ -32,54 +42,54 @@ p {
 .tag {
     color: #1f7a1f;
     margin-top: 10px;
+    font-size: 18px;
 }
 
+/* BUTTONS */
 .btn {
     display: inline-block;
     margin-top: 25px;
-    padding: 12px 25px;
+    padding: 14px 30px;
     background: #1f7a1f;
     color: white;
     text-decoration: none;
     border-radius: 6px;
+    transition: 0.3s;
 }
 
-/* PRODUCTS */
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 40px;
+.btn:hover {
+    background: white;
+    color: black;
 }
 
-.card {
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section p {
+    max-width: 600px;
+    margin: auto;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* FEATURE BOX */
+.feature {
     background: #151515;
-    width: 250px;
-    padding: 15px;
-    border-radius: 10px;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 700px;
+    border-radius: 12px;
 }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.price {
-    color: #1f7a1f;
-    font-weight: bold;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .products {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 90%;
-    }
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+    color: #555;
 }
 </style>
 
@@ -87,30 +97,39 @@ p {
 
 <body>
 
+<div class="topbar">
+    PINEBOY4LIFE • NEW DROP LIVE NOW
+</div>
+
 <div class="hero">
     <h1>PINEBOY</h1>
-    <p>PINEBOY4LIFE</p>
-    <div class="tag">STREETWEAR BRAND</div>
+    <p>PINEBOYDESIGNZ</p>
+    <div class="tag">STREETWEAR BUILT FOR THE CULTURE</div>
+
+    <a class="btn" href="shop.html">ENTER DROP</a>
+</div>
+
+<div class="section">
+    <h2>ABOUT THE BRAND</h2>
+
+    <div class="feature">
+        <p>
+        PineBoyDesignz is a streetwear brand focused on clean, bold designs
+        printed on premium Gildan blanks. Built for everyday wear and the PineBoy4Life movement.
+        </p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>NEW DROP</h2>
+    <p>Limited pieces. Once it's gone, it's gone.</p>
+
     <a class="btn" href="shop.html">SHOP NOW</a>
 </div>
 
-<h2 style="margin-top:50px;">FEATURED DROP</h2>
-
-<div id="shop" class="products">
-
-    <div class="card">
-        <img src="https://via.placeholder.com/300">
-        <h3>PineBoy Tee</h3>
-        <p class="price">$24.99</p>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/300">
-        <h3>PineBoy Hoodie</h3>
-        <p class="price">$39.99</p>
-    </div>
-
-</div>
+<footer>
+    © 2026 PineBoyDesignz • PineBoy4Life
+</footer>
 
 </body>
 </html>
