@@ -32,6 +32,24 @@ body {
 
 /* HERO */
 .hero {
+    <div style="text-align:center; margin-top:30px; font-size:18px;">
+    DROP ENDS IN:
+    <span id="timer"></span>
+</div>
+
+<script>
+let time = 3600; // 1 hour fake drop timer
+
+setInterval(() => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    document.getElementById("timer").innerHTML =
+        minutes + "m " + seconds + "s";
+
+    time--;
+}, 1000);
+</script>
     text-align: center;
     padding: 140px 20px;
     background: radial-gradient(circle, #1a1a1a, #000);
